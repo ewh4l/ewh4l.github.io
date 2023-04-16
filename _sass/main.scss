@@ -1,5 +1,5 @@
 * {
-    font-size: 25px;
+    font-size: 17px;
     font-family: 'Source Code Pro', monospace;
     max-height: 100vh;
 }
@@ -12,7 +12,11 @@ body {
     align-items: center;
 }
 .contents-box {
-    max-width: 800px;
+    width: 800px;
+}
+a {
+    text-decoration: none;
+    color: lightgreen;
 }
 
 // navbar
@@ -20,10 +24,8 @@ body {
     display: flex;
     justify-content: center;
     a {
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: bold;
-        text-decoration: none;
-        color: lightgreen;
         margin: 0 1rem;
     }
     .current {
@@ -58,8 +60,30 @@ body {
     }
 }
 
+// about page
+.about-name {
+    font-size: 2rem;
+}
+
 // blog page
-.post-link {
-    text-decoration: none;
-    color: lightgreen;
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    
+    .post-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: gray 2px dotted;
+
+        .post-title {
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: top;
+        }
+        .post-date {
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
 }

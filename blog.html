@@ -2,13 +2,11 @@
 layout: default
 title: Blog
 ---
-<h1>Latest Posts</h1>
-
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <h2><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
+<ul class="posts-container">
+    {% for post in site.posts %}
+    <li class="post-box">
+        <p class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></p>
+        <p class="post-date">{{ post.date | date: "%b %-d, %Y" }}</p>
     </li>
-  {% endfor %}
+    {% endfor %}
 </ul>
