@@ -1,0 +1,65 @@
+* {
+    font-size: 25px;
+    font-family: 'Source Code Pro', monospace;
+    max-height: 100vh;
+}
+body {
+    background-color: #292929;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contents-box {
+    max-width: 800px;
+}
+
+// navbar
+.navbar {
+    display: flex;
+    justify-content: center;
+    a {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: lightgreen;
+        margin: 0 1rem;
+    }
+    .current {
+        color: cyan;
+    }
+}
+
+// home page
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .profile-img {
+        border-radius: 50%;
+        border: 3px solid lightgreen;
+        overflow: hidden;
+        width: 150px;
+        height: 150px;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 1.7rem;
+        margin-top: 0;
+    }
+    .social {
+        font-size: 1.3rem;
+        text-decoration: none;
+        color: lightgreen;
+    }
+}
+
+// blog page
+.post-link {
+    text-decoration: none;
+    color: lightgreen;
+}
